@@ -1,0 +1,23 @@
+<div class="panel panel-default" >
+  <div class="panel-heading">
+    <h3 class="panel-title">Edit {{equip.name}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class='row'>
+      <div class="col-md-12">
+        <a class = "btn btn-primary pull-right" href="/equips">Back</a>
+        <div class="col-md-3">
+          <form method='post' action='/equips/edit/{{equip._id}}'>
+            Name : <input id='name' type='text' name='name' value='{{equip.name}}'>
+            Department : <input id='department' type='text' name='department' value='{{equip.department}}'>
+            Previous Inspection : <input id='prevInspect' type='date' name='prevInspect' value='{{equip.prevInspect}}'>
+            Next Inspection : <input id='nextInspect' type='date' name='nextInspect' value='{{equip.nextInspect}}'>
+            Location : <input id='currentLoc' type='text' name='currentLoc' value='{{equip.currentLoc}}'>
+            Image URL : <input id='img_url' type='text' name='img_url' value='{{equip.img_url}}'>
+            <input class = "btn btn-primary" type='submit' value='Save Changes'>
+          </form>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>

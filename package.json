@@ -1,0 +1,40 @@
+{
+  "name": "equipmentManagerApp",
+  "version": "1.0.0",
+  "description": "Simple authentication system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Good",
+  "license": "",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "dateformat": "^2.0.0",
+    "debug": "~2.0.0",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "hbs": "*",
+    "method-override": "^2.3.7",
+    "mongo": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "monk": "*",
+    "morgan": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "qr-image": "^3.1.0",
+    "sendgrid": "^2",
+    "serve-favicon": "*"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}

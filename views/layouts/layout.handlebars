@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Equipment Manager</title>
+	<link rel="stylesheet" href="/css/bootstrap.css" />
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+	<div class="container">
+      <div id='test' class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            {{#if user}}
+              <li role="presentation"><a href="/equips">Home</a></li>
+              <li role="presentation"><a href="/users/logout">Logout</a></li>
+            {{else}}
+              <li role="presentation"><a href="/users/login">Login</a></li>
+              <li role="presentation"><a href="/users/register">Register</a></li>
+            {{/if}}
+          </ul>
+        </nav>
+        <h3 class="text-muted">Equipment Manager</h3></br>
+        <p id="welcome">Welcome {{user.name}}</p>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-12">
+          {{#if success_msg}}
+            <div class="alert alert-success">{{success_msg}}</div>
+          {{/if}}
+
+          {{#if error_msg}}
+            <div class="alert alert-danger">{{error_msg}}</div>
+          {{/if}}
+
+          {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+          {{/if}}
+          
+          {{{body}}}
+        </div>
+
+        
+      </div>
+
+    <footer>
+      <p>Equipment Manager 2016--David Good</p>
+    </footer>
+
+    </div> <!-- /container -->
+</body>
+</html>

@@ -1,0 +1,20 @@
+<div class="panel panel-default" >
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Equipment</h3>
+  </div>
+  <div class="panel-body">
+    <div class='row'>
+      <div class="col-md-3">
+        <form method='post' action='/equips/add'>
+          Name : <input id='name' type='text' name='name'>
+          Department : <input id='department' type='text' name='department'>
+          Previous Inspection : <input id='prevInspect' type='date' name='prevInspect'>
+          Next Inspection : <input id='nextInspect' type='date' name='nextInspect'>
+          Location : <input id='currentLoc' type='text' name='currentLoc'>
+          Image URL : <input id='img_url' type='text' name='img_url'>
+          <input class = "btn btn-primary" type='submit' value='Add'>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
